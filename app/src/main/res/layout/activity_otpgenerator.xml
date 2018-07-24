@@ -1,0 +1,205 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:name=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/relative_above"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:id="@+id/iv_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_happiness"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/iv_smile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_deliver"
+                    android:src="@drawable/smiley"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <in.delbird.chemist.CustomViews.GothamBoldTextView
+                android:id="@+id/tv_happiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/view"
+                android:layout_centerHorizontal="true"
+                android:text="@string/in_a_happiness"
+                android:textColor="#4c4c4c"
+                android:padding="5dp"
+                android:textSize="22sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_above="@+id/tv_dellbird"
+                android:layout_toLeftOf="@id/tv_happiness"
+                android:layout_toRightOf="@+id/tv_happiness"
+                android:background="#1A1A1A" />
+
+            <in.delbird.chemist.CustomViews.GothamLightTextView
+                android:id="@+id/tv_dellbird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/contentotp"
+                android:textColor="#4c4c4c"
+                android:textSize="16dp"
+                android:padding="5dp"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp"
+            android:fillViewport="true">
+            <RelativeLayout
+                android:id="@+id/relative_below"
+                android:layout_width="match_parent"
+                android:layout_height="207.67dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/theme_color"
+                android:gravity="center">
+                <RelativeLayout
+                    android:id="@+id/relative_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    >
+
+
+                    <!--<in.codeyeti.delbird.CustomViews.GouthamLightEditText-->
+                        <!--android:id="@+id/ed_otp"-->
+                        <!--android:layout_width="241.67dp"-->
+                        <!--android:layout_height="38dp"-->
+                        <!--android:background="@drawable/edittext_border_redious"-->
+                        <!--android:hint="Enter OTP"-->
+                        <!--android:inputType="number"-->
+                        <!--android:maxLines="1"-->
+                        <!--android:paddingLeft="8dp"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textColor="#1a1a1a"-->
+                        <!--android:textColorHint="@color/common_signin_btn_light_text_disabled"-->
+                        <!--android:textSize="16sp" />-->
+
+
+                    <in.delbird.chemist.CustomViews.GouthamLightEditText
+                    android:id="@+id/ed_otp"
+                    android:layout_width="274.67dp"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_border_radious_withgray"
+                    android:hint="ENTER OTP"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#1a1a1a"
+                    android:layout_centerHorizontal="true"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textColorHint="@color/common_signin_btn_light_text_disabled"
+                    android:textSize="16sp"
+                    android:paddingLeft="8dp"
+
+                    />
+
+
+                </RelativeLayout>
+
+                <in.delbird.chemist.CustomViews.GothamLightButtonText
+                    android:id="@+id/varify_btn"
+                    android:layout_width="137dp"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/relative_middle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/selector_state_login_button"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:text="VERIFY"
+                    android:textAllCaps="false"
+                    android:textColor="#ffff"
+
+                    android:textSize="16dp" />
+
+                <in.delbird.chemist.CustomViews.GothumMediumTextView
+                android:id="@+id/tv_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/in_a_resend"
+                android:layout_marginBottom="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:textSize="16sp"
+                android:textColor="#ffff"
+                    android:padding="10dp"
+                    android:layout_below="@+id/varify_btn"
+                    android:layout_marginTop="20dp"
+
+                />
+
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

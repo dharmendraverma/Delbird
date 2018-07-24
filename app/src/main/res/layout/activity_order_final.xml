@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.delbird.chemist.activity.OrderFinal">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <RelativeLayout
+            android:id="@+id/emptyCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/imageView"
+                android:background="@drawable/smileyt"
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true" />
+
+
+            <in.delbird.chemist.CustomViews.GothamBoldTextView
+                android:id="@+id/final_start_shopping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ColorButton"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:text="Continue Buying "
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/changeProfileGP"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/changeProfileIT"
+            android:icon="@drawable/user1"
+            android:title="Edit Profile" />
+    </group>
+
+    <group
+        android:id="@+id/orderGP"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/orderIT"
+            android:icon="@drawable/orderlist"
+            android:title="My Orders" />
+    </group>
+
+
+    <group
+        android:id="@+id/walletGP"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/walletIT"
+            android:icon="@drawable/wallet"
+            android:title="Wallet"
+            />
+    </group>
+
+    <group
+        android:id="@+id/wallet_historyGP"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/wallet_historyIT"
+            android:icon="@drawable/wallet"
+            android:title="Wallet History " />
+    </group>
+
+
+
+
+    <group
+        android:id="@+id/chatGP"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/chatIT"
+            android:icon="@drawable/help_new_menu"
+            android:title="Help And Support" />
+    </group>
+
+    <group
+        android:id="@+id/rateUsGP"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/rateUsIT"
+            android:icon="@drawable/star_icon"
+            android:title="Rate Us" />
+    </group>
+
+
+    <group
+        android:id="@+id/feedBackGP"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/feedBackIT"
+            android:icon="@drawable/feedback"
+            android:title="Feedback" />
+    </group>
+
+    <group
+        android:id="@+id/aboutGP"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/aboutIT"
+            android:icon="@drawable/aboutus1"
+            android:title="About Us"
+            />
+    </group>
+
+
+</menu>

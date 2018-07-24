@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/shopPicIV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/location"
+                app:civ_border_color="#4c4c4c"
+                app:civ_border_width="2dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <in.delbird.chemist.CustomViews.GothumMediumTextView
+                android:id="@+id/shopNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="SHOP NAME"
+                android:textColor="#4c4c4c"
+                android:textSize="16sp" />
+
+            <in.delbird.chemist.CustomViews.GothamLightTextView
+                android:id="@+id/shopAddressTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shopNameTV"
+                android:padding="2dp"
+                android:text="B-240 Sector 46 noida- 12345 "
+                android:textColor="#4c4c4c"
+                android:textSize="12sp" />
+
+            <in.delbird.chemist.CustomViews.GothamLightTextView
+                android:id="@+id/shopCategoryTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:gravity="right"
+                android:padding="3dp"
+                android:paddingTop="5dp"
+                android:text="Electronics"
+                android:textColor="#863c87"
+                android:layout_marginTop="2.5dp"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shopAddressTV"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9">
+
+                    <ImageView
+                        android:id="@+id/iv_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/loqation1"
+                        android:layout_marginLeft="-4dp"/>
+
+                    <in.delbird.chemist.CustomViews.GothamLightTextView
+                        android:id="@+id/tv_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+
+                        android:layout_toRightOf="@id/iv_phone"
+                        android:padding="2dp"
+                        android:text="2.3km"
+                        android:textColor="#4c4c4c"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1">
+
+                    <ImageView
+                        android:id="@+id/iv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toLeftOf="@+id/shopPhoneTV"
+                        android:background="@drawable/selector_callbutton_background"
+                        android:src="@drawable/phone1" />
+
+                    <in.delbird.chemist.CustomViews.GothamLightTextView
+                        android:id="@+id/shopPhoneTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+
+                        android:layout_marginRight="20dp"
+                        android:text="+91-9898989898"
+                        android:textColor="#4c4c4c"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

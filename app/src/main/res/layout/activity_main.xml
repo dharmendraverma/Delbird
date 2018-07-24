@@ -1,0 +1,166 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:name=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear_above"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:id="@+id/lv_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_blink"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/iv_car"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_deliver"
+                    android:src="@drawable/doc"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <in.delbird.chemist.CustomViews.GothamBoldTextView
+                android:id="@+id/tv_blink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/view"
+                android:layout_centerHorizontal="true"
+                android:text="@string/in_a_blink"
+                android:textColor="#4c4c4c"
+                android:padding="5dp"
+                android:textSize="22sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_above="@+id/tv_dellbird"
+                android:layout_toLeftOf="@id/tv_blink"
+                android:layout_toRightOf="@+id/tv_blink"
+                android:background="#1A1A1A" />
+
+            <in.delbird.chemist.CustomViews.GothamLightTextView
+                android:id="@+id/tv_dellbird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/contentmain"
+                android:textColor="#4c4c4c"
+                android:textSize="16dp"
+                android:padding="5dp"/>
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="0dp"
+            android:fillViewport="true">
+            <RelativeLayout
+                android:id="@+id/relative_above"
+                android:layout_width="match_parent"
+                android:layout_height="207.67dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/theme_color">
+                <RelativeLayout
+                    android:id="@+id/relative_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="65dp"
+                    android:padding="2dp"
+                    android:background="@drawable/button_border_radious_withgray"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_phone"
+                        android:layout_width="33.67dp"
+                        android:layout_height="38dp"
+                        android:layout_alignBottom="@+id/ed_mobile"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@+id/ed_mobile"
+                        android:background="@drawable/image_corner_radious"
+                        android:padding="7dp"
+                        android:src="@drawable/mobilephone" />
+
+                    <in.delbird.chemist.CustomViews.GouthamLightEditText
+                        android:id="@+id/ed_mobile"
+                        android:layout_width="241.67dp"
+                        android:layout_height="38dp"
+                        android:layout_toRightOf="@+id/iv_phone"
+                        android:background="@drawable/edittext_border_redious"
+                        android:hint="Enter Mobile Number"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingLeft="8dp"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:textColor="#1a1a1a"
+                        android:textColorHint="@color/common_signin_btn_light_text_disabled"
+                        android:textSize="16sp"
+                        android:maxLength="10"/>
+
+
+                </RelativeLayout>
+
+                <in.delbird.chemist.CustomViews.GothamLightButtonText
+                    android:id="@+id/login_btn"
+                    android:layout_width="137dp"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/relative_middle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/selector_state_login_button"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:text="LOGIN"
+                    android:textAllCaps="false"
+                    android:textColor="#ffff"
+
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

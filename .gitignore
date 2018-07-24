@@ -1,0 +1,15 @@
+/app/app.iml
+/.idea
+.gradle
+/local.properties
+/build
+/app/build
+/Doctor/build
+/chemist/build
+/chemist/chemist.iml
+/Doctor/doctor.iml
+/ashishjindal89-delbird_android-b4a9c21fed35.iml
+/DelBirdPoolClient.iml
+/captures
+/doctor/build
+/doctor/doctor.iml

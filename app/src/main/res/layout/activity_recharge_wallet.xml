@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="in.delbird.chemist.activity.RechargeWalletActivity">
+
+    <include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbar" />
+
+
+
+
+    <in.delbird.chemist.CustomViews.GothamLightTextView
+        android:id="@+id/rs_recharge_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="16dp"
+        android:text="Select Your Chemist"
+        android:textSize="18sp"
+        android:textColor="#1A1A1A" />
+
+
+    <ImageView
+        android:id="@+id/iv_rs_recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_marginLeft="100dp"
+        android:scaleType="center"
+        android:src="@drawable/darkrs"/>
+
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/about_us_final"/>
+
+    <in.delbird.chemist.CustomViews.GothamBoldTextView
+        android:id="@+id/checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:background="@color/ColorButton"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:text="Check_out  "
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="5dp">-->
+
+
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/card_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--card_view:cardCornerRadius="4dp"-->
+        <!--card_view:cardElevation="10dp"-->
+        <!--card_view:cardUseCompatPadding="true"-->
+
+        <!-->-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/foodIV"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:src="@drawable/foodicon"></ImageView>-->
+
+            <!--<in.codeyeti.delbird.CustomViews.GothamBoldTextView-->
+                <!--android:id="@+id/foodTV"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:text="FOOD"-->
+                <!--android:textSize="20sp"></in.codeyeti.delbird.CustomViews.GothamBoldTextView>-->
+
+        <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+<!--</LinearLayout>-->
+
+
+
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_category_layout"
+    android:padding="5dp"
+
+    >
+
+    <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/card_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--card_view:cardCornerRadius="4dp"-->
+    <!--card_view:cardElevation="10dp"-->
+    <!--card_view:cardUseCompatPadding="true">-->
+
+    <ImageView
+        android:id="@+id/foodIV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/foodicon" />
+
+    <TextView
+        android:id="@+id/foodTV"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#4c4c4c"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        />
+
+    <!--</android.support.v7.widget.CardView>-->
+
+</LinearLayout>

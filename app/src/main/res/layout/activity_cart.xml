@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/emptyCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        >
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="220dp"
+        android:id="@+id/imageView"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/empty"
+        android:layout_centerHorizontal="true" />
+
+    <in.delbird.chemist.CustomViews.GothumMediumTextView
+        android:id="@+id/text_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add some stuff!"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:textColor="@color/theme_color"
+        android:layout_below="@+id/imageView"
+        />
+
+    <in.delbird.chemist.CustomViews.GothumMediumTextView
+        android:id="@+id/text_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currently you have no items in your cart "
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:textColor="@color/theme_color"
+        android:layout_below="@+id/text_view1"
+        android:layout_marginBottom="126dp"
+        android:layout_marginLeft= "30dp"/>
+
+        <in.delbird.chemist.CustomViews.GothamBoldTextView
+            android:id="@+id/start_shopping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ColorButton"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:minHeight="50dp"
+            android:text="Start Buying"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fillCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cart_items"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+        <ScrollView
+            android:id="@+id/imagesScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:id="@+id/imagesLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <in.delbird.chemist.CustomViews.GothamBoldTextView
+            android:id="@+id/checkout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:background="@color/ColorButton"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:text="Check_out  "
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

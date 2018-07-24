@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/singleRowShopLisCV"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp"
+    android:layout_marginBottom="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:andorid="http://schemas.android.com/tools">
+
+
+        <LinearLayout
+            android:id="@+id/parent_layout_product"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <!--<in.codeyeti.delbird.CustomViews.CircularImageView-->
+            <!--android:id="@+id/iv_profile"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:src="@drawable/location"-->
+            <!--android:background="@color/common_signin_btn_light_text_disabled"/>-->
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/shopPicIV"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:src="@drawable/location"
+                android:layout_marginLeft="4dp"
+                android:padding="5dp"
+               />
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            >
+
+            <in.delbird.chemist.CustomViews.GothumMediumTextView
+                android:id="@+id/shopNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medicine Name ljsalkjsljas lksajlask jaslkjasljsaljas"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="2dp"
+                android:textColor="#4c4c4c"/>
+
+            <in.delbird.chemist.CustomViews.GothamLightTextView
+                android:layout_below="@+id/shopNameTV"
+                android:id="@+id/shopAddressTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:padding="2dp"
+                android:textColor="#4c4c4c"
+                android:text="1 packet consisting of 10 medicines skhsdka jhsdkjhsakjhsd"/>
+
+
+
+
+
+
+            <!--<in.codeyeti.delbird.CustomViews.GothamLightTextView-->
+                <!--android:id="@+id/shopCategoryTV"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Electronics"-->
+                <!--android:textSize="11sp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:gravity="right"-->
+                <!--android:padding="3dp"-->
+                <!--android:textColor="#863c87"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--/>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/shopAddressTV"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rupee_icon"
+                        android:layout_marginLeft="-4dp"
+                        android:id="@+id/before_discount"
+                        />
+
+                    <in.delbird.chemist.CustomViews.GothamLightTextView
+                        android:id="@+id/mrp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123.20"
+                        android:textSize="12sp"
+                        android:textColor="#4c4c4c"
+                        android:background="@drawable/single_line"
+                        android:padding="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/iv_phone"
+                        />
+                    
+
+                    <ImageView
+                        android:id="@+id/iv_Rs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rupee_icon"
+                        android:layout_marginLeft="-4dp"
+                        />
+
+                    <in.delbird.chemist.CustomViews.GothamLightTextView
+                        android:id="@+id/sellPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25"
+                        android:textSize="12sp"
+                        android:textColor="#4c4c4c"
+                        android:padding="2dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/iv_Rs"
+                        />
+
+
+
+                    <in.delbird.chemist.CustomViews.GothamLightTextView
+                        android:id="@+id/discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#4c4c4c"
+                        android:padding="2dp"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_toRightOf="@id/iv_Rs"
+                        android:drawablePadding="8dp"
+                        />
+                    <ImageView
+                        android:id="@+id/iv_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/discount"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_toRightOf="@id/discount"
+                        />
+                </LinearLayout>
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1.1"-->
+                    <!-->-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/iv_distance"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_toLeftOf="@+id/shopPhoneTV"-->
+                        <!--android:src="@drawable/ic_action_name"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--/>-->
+
+                    <!--<in.codeyeti.delbird.CustomViews.GothamLightTextView-->
+                        <!--android:id="@+id/shopPhoneTV"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="+91-9898989898"-->
+                        <!--android:textSize="12sp"-->
+                        <!--android:textColor="#4c4c4c"-->
+
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginRight="20dp"-->
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:minWidth="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2"
+                >
+                <ImageView
+                    android:id="@+id/iv_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/minus"
+                    />
+
+                <in.delbird.chemist.CustomViews.GothamLightTextView
+                    android:id="@+id/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="12sp"
+                    android:textColor="#4c4c4c"
+                    android:padding="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plus"
+                    android:layout_marginLeft="5dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/forward"
+                android:layout_marginLeft="4dp"
+                android:id="@+id/forward"
+                android:padding="5dp"
+                />
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar"
+    android:background="@color/theme_color" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/title_txt"
+        >
+        <in.delbird.chemist.CustomViews.GothamLightTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_title"
+            android:textColor="#ffff"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"/>
+
+
+
+        </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
+

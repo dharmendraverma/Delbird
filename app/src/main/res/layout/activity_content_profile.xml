@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    android:id="@+id/form"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <LinearLayout
+            android:id="@+id/lv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:background="@drawable/button_border_radious_withgray">
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="33.67dp"
+                android:layout_height="38dp"
+                android:layout_alignBottom="@+id/ed_mobile"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/ed_mobile"
+                android:background="@drawable/image_corner_radious"
+                android:padding="7dp"
+                android:src="@drawable/mobilephone" />
+
+            <in.delbird.chemist.CustomViews.GouthamLightEditText
+                android:id="@+id/ed_phone"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/iv_phone"
+                android:background="@drawable/edittext_border_redious"
+                android:enabled="false"
+                android:hint="Mobile Number"
+
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="#1a1a1a"
+                android:textColorHint="@color/common_signin_btn_light_text_disabled"
+                android:textSize="16sp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lv_phone"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:padding="1dp"
+            android:background="@drawable/button_border_radious_withgray"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_user"
+                android:layout_width="33.67dp"
+                android:layout_height="38dp"
+                android:layout_alignBottom="@+id/ed_mobile"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/ed_mobile"
+                android:background="@drawable/image_corner_radious"
+                android:padding="7dp"
+                android:src="@drawable/user" />
+
+            <in.delbird.chemist.CustomViews.GouthamLightEditText
+                android:id="@+id/ed_user"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/iv_phone"
+                android:background="@drawable/edittext_border_redious"
+                android:hint="Name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="#1a1a1a"
+                android:textColorHint="@color/common_signin_btn_light_text_disabled"
+                android:textSize="16sp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lv_user"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:background="@drawable/button_border_radious_withgray">
+
+            <ImageView
+                android:id="@+id/iv_email"
+                android:layout_width="33.67dp"
+                android:layout_height="38dp"
+                android:layout_alignBottom="@+id/ed_mobile"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/ed_mobile"
+                android:background="@drawable/image_corner_radious"
+                android:padding="7dp"
+                android:src="@drawable/mail" />
+
+            <in.delbird.chemist.CustomViews.GouthamLightEditText
+                android:id="@+id/ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edittext_border_redious"
+                android:hint="Email Id"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+
+                android:textColor="#1a1a1a"
+                android:textColorHint="@color/common_signin_btn_light_text_disabled"
+                android:textSize="16sp"
+
+
+                />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lv_dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv_email"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:padding="1dp"
+        android:background="@drawable/button_border_radious_withgray">
+
+        <ImageView
+            android:id="@+id/iv_dob"
+            android:layout_width="33.67dp"
+            android:layout_height="38dp"
+            android:layout_alignBottom="@+id/ed_mobile"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/ed_mobile"
+            android:background="@drawable/image_corner_radious"
+            android:padding="7dp"
+            android:src="@drawable/bday" />
+
+        <in.delbird.chemist.CustomViews.GouthamLightEditText
+            android:id="@+id/ed_dob"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edittext_border_redious"
+            android:hint="Date Of Birth"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+
+            android:textColor="#1a1a1a"
+            android:textColorHint="@color/common_signin_btn_light_text_disabled"
+            android:textSize="16sp"
+
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lv_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv_dob"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:padding="1dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_sex"
+            android:layout_width="33.67dp"
+            android:layout_height="38dp"
+            android:layout_alignBottom="@+id/ed_mobile"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/ed_mobile"
+            android:background="@drawable/image_corner_radious"
+            android:padding="7dp"
+            android:src="@drawable/gender" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"
+            android:buttonTint="@color/theme_color"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:buttonTint="@color/theme_color"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="20dp"
+            android:checked="true"
+            />
+        </RadioGroup>
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="137dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/lv_sex"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/selector_state_login_button"
+            android:text="UPDATE"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="16dp" />
+
+
+
+
+</RelativeLayout>
+
